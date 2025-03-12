@@ -36,8 +36,7 @@ todo-list-app/
 │   │   ├── schemas.py     # Pydantic schemas
 │   │   └── routers/       # API routes
 │   │       └── todos.py
-│   ├── requirements.txt
-│   └── Procfile           # For deployment
+│   └── requirements.txt
 └── frontend/              # React frontend
     ├── src/
     │   ├── components/    # React components
@@ -49,8 +48,7 @@ todo-list-app/
     │   │   └── api.js
     │   ├── App.jsx        # Main React component
     │   └── main.jsx       # React entry point
-    ├── package.json
-    └── vercel.json        # For deployment
+    └── package.json
 ```
 
 ## 🚦 Getting Started
@@ -103,32 +101,4 @@ todo-list-app/
 - `POST /api/todos/` - Create a new todo
 - `PUT /api/todos/{id}` - Update a todo
 - `DELETE /api/todos/{id}` - Delete a todo
-
-## 🚀 Deployment
-
-### Frontend (Vercel)
-1. Connect your GitHub repository to Vercel
-2. Configure the build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - Install Command: `npm install`
-
-### Backend (Render)
-1. Connect your GitHub repository to Render
-2. Configure as a Web Service:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-   - Select Python environment
-
-<<<<<<< Updated upstream
-
-=======
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
->>>>>>> Stashed changes
 
